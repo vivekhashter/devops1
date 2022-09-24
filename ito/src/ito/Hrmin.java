@@ -14,6 +14,12 @@ public class Hrmin {
 		 x = (x%12+y/60)*30;
 		 y= y*6;
 		 sub= (y-x);
+		if(y < 35) {
+		sub = (y - x);
+	}else {
+		sub = 360- (y-x);
+	
+	}		
 		return sub ;
 		
 	}
