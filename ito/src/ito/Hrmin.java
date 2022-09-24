@@ -11,11 +11,14 @@ public class Hrmin {
 	public static float func( float x,float  y)
 	{
 		float sub;
-		 x = (x%12+y/60)*30;
-		 y= y*6;
 		if(y < 35) {
+		x = (x%12+y/60)*30;
+		 y= y*6;
 		sub = (y - x);
-	}else {
+	}
+		else {
+		x = (x%12+y/60)*30;
+		 y= y*6;
 		sub = 360- (y-x);
 	
 	}		
